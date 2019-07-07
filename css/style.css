@@ -12,9 +12,19 @@ li{
 	margin-right:240px;
 	color: grey;
 }
+li:hover{
+	color:red;
+}
+.s:hover{
+	color: red;
+}
 h1{
 	font-size: 30px;
 	margin-left: 200px;
+}
+h1:hover{
+	color: red;
+
 }
 .s{
 	margin-right: 240px;
@@ -23,6 +33,11 @@ h1{
 .ph{
 	margin-top: 10px;
 	margin-left: 200px;
+	transition:width 0.5s ease 0.5s;
+}
+.ph:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
 }
 .l2{
 	display: flex;
@@ -34,12 +49,21 @@ h1{
 .h-1{
 	left: 0;
 }
+.h-1:hover{
+	color: red;
+}
 .h-5{
 	margin-top:30px;
 	color: grey;
 }
+.h-5:hover{
+	color: yellow;
+}
 h5{
 	color: grey;
+}
+h5:hover{
+	color: yellow;
 }
 .se3{
 	display: flex;
@@ -57,24 +81,51 @@ h5{
 .lop{
 	margin-bottom: 70px;
 }
+.lop:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
+	margin-right: 20px;
+}
 .cup{
 	margin-bottom: 70px;
+}
+.cup:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
 }
 .pol{
 	margin-bottom: 40px;
 }
+.pol:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
+	margin-right: 20px;
+}
 .yu{
 	margin-bottom: 40px;
+}
+.yu:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
 }
 .bl{
 	margin-bottom: 70px;
 	width: 419px;
 	height: 280px;
 }
+.bl:hover{
+    border:1px solid red;
+	box-shadow: 5px 10px red;
+	margin-right: 20px;
+}
 .gg{
 	margin-bottom: 70px;
 	width: 419px;
 	height: 280px;
+}
+.gg:hover{
+	border:1px solid red;
+	box-shadow: 5px 10px red;
 }
 .se4{
 	display: flex;
@@ -112,11 +163,146 @@ input{
 	justify-content: space-between;
 	margin: 200px;
 }
-
 button:hover{
      background-color: red;
+     background-image: url('../img/click.png');
+	background-repeat: no-repeat;
 }
 .se6{
 	display: flex;
 	justify-content: center;
+}
+.burger{
+	display: none;
+	
+}
+.burger img{
+	height: 50px;
+}
+@media only screen and (max-width: 1024px){
+	li{
+		display: none;
+	}
+	.s{
+		display: none;
+	}
+	.burger{
+		display: block;
+		height: 50px;
+		margin-right: 60px;
+	}
+	.ph{
+		width: 700px;
+	}
+	.l2{
+		width: 700px;
+	}
+	.se3{
+		width: 700px;
+	}
+	.se4{
+		width: 700px;
+	}
+	.se5{
+		width: 700px;
+	}
+    .se6{
+		width: 700px;
+	}
+	.lop{
+		width: 300px;
+		margin-right: 20px;
+	}
+	.gg{
+		width: 300px;
+	}
+	.bl{
+		width: 300px;
+		margin-right: 20px;
+	}
+	.cup{
+		width: 300px;
+	}
+	.se6{
+        display: flex;
+        justify-content: center;
+	}
+}
+@media screen and (max-width: 480px){
+	li{
+		display: none;
+	}
+	.s{
+		display: none;
+	}
+	.burger{
+		display: block;
+		height: 50px;
+		margin-right: 90px;
+	}
+	.ph{
+		width: 200px;
+	}
+	.l2{
+		width: 300px;
+	}
+	.se3{
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+	.se4{
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+	.se5{
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+    .se6{
+		width: 300px;
+	}
+	.lop{
+		width: 100px;
+		margin-top:20px;
+	}
+	.gg{
+		width: 100px;
+	}
+	.bl{
+		width: 100px;
+		margin-top:20px;
+	}
+	.cup{
+		width: 100px;
+	}
+	.se6{
+        display: flex;
+        justify-content: center;
+	}
+	@media screen and (max-width: 375px){
+		li{
+		display: none;
+	}
+	.s{
+		display: none;
+	}
+	.burger{
+		display: block;
+		height: 50px;
+		margin-right: 60px;
+
+	}
+	.se4{
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+	.se5{
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+	}
 }
